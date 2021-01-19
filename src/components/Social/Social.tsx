@@ -61,7 +61,13 @@ const Soical = () => {
   return (
     <SocialContainer>
       {SocialLinks.map((el) => (
-        <IconLink rel='noopener' target='_blank' href={el.link} key={el.key}>
+        <IconLink
+          rel='noopener'
+          aria-label={el.key}
+          target='_blank'
+          href={el.link}
+          key={el.key}
+        >
           {el.icon}
         </IconLink>
       ))}

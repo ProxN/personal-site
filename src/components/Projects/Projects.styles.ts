@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Heading = styled.h3`
+export const Heading = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fontSizes[4]}px;
     font-weight: ${theme.fontWeights[2]};

@@ -74,7 +74,7 @@ const Hero = () => {
           I&apos;m
           <span>&nbsp; Ayoub Kanoun</span>
         </Heading>
-        <SubHeading>I&apos;m a Front-End Deveopler.</SubHeading>
+        <SubHeading as='h2'>I&apos;m a Front-End Deveopler.</SubHeading>
         <Social />
       </Flex>
     </HeroSection>
