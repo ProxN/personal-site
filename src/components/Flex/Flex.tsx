@@ -12,14 +12,16 @@ interface FlexProps {
     | 'space-around'
     | 'center';
   height?: string;
+  marginTop?: number;
 }
 
 const FlexContainer = styled.div<FlexProps>`
-  ${({ direction, justify, height, align }) => css`
+  ${({ direction, justify, height, align, marginTop }) => css`
     flex-direction: ${direction && direction};
     justify-content: ${justify && justify};
     align-items: ${align && align};
     height: ${height || 'auto'};
+    margin-top: ${marginTop && marginTop}rem;
   `}
 
   display:flex;

@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const fontSizes = [12, 14, 16, 18, 30, 48, 58, 72];
+const fontSizes = [12, 14, 16, 24, 30, 48, 58, 72];
 const fontFamily = "'Poppins', Helvetica, sans-serif";
 const fontWeights = [400, 500, 700];
 const lineHeight = 1.5;
