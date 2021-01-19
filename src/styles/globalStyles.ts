@@ -42,11 +42,14 @@ export default createGlobalStyle`
         margin:0;
     }
 
-
     .backward{
         transition:transform 0.2s ease, width 0.18s 0.2s ease;
     }
     .forward{
         transition: width 0.18s ease, transform 0.2s 0.18s ease;
+    }
+
+    section{
+        padding:10rem 0rem;
     }
 `;

@@ -2,8 +2,9 @@ import styled, { css } from 'styled-components';
 import { Media } from '@styles/index';
 
 export const HeaderContainer = styled.header`
-  height: 8rem;
+  height: 10rem;
   width: 100%;
+  position: fixed;
 `;
 
 export const Nav = styled.nav`

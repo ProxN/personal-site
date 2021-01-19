@@ -9,8 +9,8 @@ const borderRadius = '8px';
 export const DarkTheme: DefaultTheme = {
   colors: {
     primary: {
-      light: '#574F7D',
-      main: '#3C2A4D',
+      light: '#503A65',
+      main: '#30223e',
       dark: '#1f132b',
       // light: '#363c41',
       // main: '#1d2228',
