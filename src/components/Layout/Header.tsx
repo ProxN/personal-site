@@ -27,9 +27,9 @@ const Header = () => {
           </Logo>
         </Link>
         <Menu menuOpen={menuOpen}>
-          <MenuItem>Projects</MenuItem>
-          <MenuItem>Contact</MenuItem>
-          <MenuItem border>Resume</MenuItem>
+          <MenuItem href='#projects'>Projects</MenuItem>
+          {/* <MenuItem>Contact</MenuItem> */}
+          {/* <MenuItem border>Resume</MenuItem> */}
         </Menu>
         <HamburgerTab onClick={toggleMenu} menuOpen={menuOpen}>
           <Bar className={menuOpen ? 'forward' : 'backward'} />

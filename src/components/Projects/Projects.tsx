@@ -65,7 +65,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <section>
+    <section id='projects'>
       <Heading>Projects</Heading>
       <ProjectsList>
         {data.map((el) => (
@@ -79,7 +79,12 @@ const Projects = () => {
             </Flex>
             <Links>
               {el.links.map((link) => (
-                <ButtonLink href={link.url} target='_blank'>
+                <ButtonLink
+                  key={link.type}
+                  href={link.url}
+                  rel='noopener'
+                  target='_blank'
+                >
                   {link.type}
                   {link.type === 'demo' ? <OpenIcon /> : <GithubIcon />}
                 </ButtonLink>
@@ -87,27 +92,6 @@ const Projects = () => {
             </Links>
           </ProjectBox>
         ))}
-        {/* <ProjectBox>
-          <ProjectTitle>Fortnite Stats</ProjectTitle>
-          <ProjectDescription>
-            A simple time management app that helps you track your monthly goals and daily
-            tasks.
-          </ProjectDescription>
-          <Flex marginTop={1.5}>
-            <Tech>Javascript</Tech>
-            <Tech>Sass</Tech>
-          </Flex>
-          <Links>
-            <ButtonLink>
-              Demo
-              <OpenIcon />
-            </ButtonLink>
-            <ButtonLink>
-              Code
-              <GithubIcon />
-            </ButtonLink>
-          </Links>
-        </ProjectBox> */}
       </ProjectsList>
     </section>
   );
